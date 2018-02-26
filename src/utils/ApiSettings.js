@@ -4,10 +4,10 @@
 
 const API_SETTINGS = {
     api: {
-        root: "hs.linusbf.com/api",
+        root: "http://hs.linusbf.com/api/",
     },
-    requests:{
-        name: {
+    requests:[
+        {
             api_uid: "user",
             post_data:{
                 "username": -1,
@@ -17,7 +17,7 @@ const API_SETTINGS = {
                 title: "Your name",
             }
         },
-        email: {
+        {
             api_uid: "email",
             post_data:{
                 "email": -1,
@@ -27,7 +27,7 @@ const API_SETTINGS = {
                 title: "Alert Email(s)",
             }
         },
-        phone: {
+        {
             api_uid: "phone",
             post_data:{
                 "number": -1,
@@ -37,7 +37,7 @@ const API_SETTINGS = {
                 title: "Alert Number(s)",
             }
         },
-    },
+    ],
 };
 
 export default API_SETTINGS;
